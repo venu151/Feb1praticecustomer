@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="~/Content/StyleSheet1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("About", "About", "Home")</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            <li>@Html.ActionLink("Customer", "Index", "Customer")</li>
+        </ul>
+    </div>
+    <div class="mainPanel">
+
+        @RenderBody()
+    </div>
+</body>
+</html>
